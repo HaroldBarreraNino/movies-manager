@@ -27,7 +27,7 @@ const AdminNavbar = () => {
                 </ul>
                 <ul>
                     <li>
-                        <Link to='/' className="btn-secondary">BUSCAR PELICULA</Link>
+                        <Link to='/buscarpeliculas' className="btn-secondary">BUSCAR PELICULA</Link>
                     </li>
                 </ul>
             </nav>

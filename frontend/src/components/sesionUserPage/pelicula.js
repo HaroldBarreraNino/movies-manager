@@ -25,7 +25,7 @@ function Pelicula({ id }) {
 
         getMovie();
 
-    }, [])
+    }, [id])
 
     const rateMovie = () => {
         const RateObject = Parse.Object.extend("calificaciones");
@@ -42,7 +42,7 @@ function Pelicula({ id }) {
                 alert('Error en el sistema, intentelo mas tarde.');
             });
     }
-
+   
     return (
         <div className="container-card">
             <div className="container-center">
