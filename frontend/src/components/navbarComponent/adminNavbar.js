@@ -20,12 +20,12 @@ const AdminNavbar = () => {
             <nav>
                 <ul>
                     <li>
-                        <Link to='/' className="btn-secondary">TABLA USUARIOS</Link>
+                        <Link to='/usercrud' className="btn-secondary">TABLA USUARIOS</Link>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <Link to='/' className="btn-secondary">TABLA PELICULAS</Link>
+                        <Link to='/moviecrud' className="btn-secondary">TABLA PELICULAS</Link>
                     </li>
                 </ul>
             </nav>

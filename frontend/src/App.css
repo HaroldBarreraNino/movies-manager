@@ -45,6 +45,10 @@ label {
     text-align: right;
 }
 
+li{
+    list-style-type: none;
+}
+
 #banner {
     width: 100%;
     background-image: url(https://as2.ftcdn.net/v2/jpg/02/56/54/81/1000_F_256548179_zqcVbhsJTPoDTf1xSYKYbmedb2aAL4fB.jpg);
@@ -69,6 +73,12 @@ label {
     background-position: center;
 }
 
+#titleitem{
+    color: #F26419;
+    font-size: 30px;
+    font-weight: bold;
+}
+
 .container {
     width: 70%;
     margin: 0px auto;
@@ -77,6 +87,14 @@ label {
 .container-center {
     text-align: center;
     margin: 0px auto;
+}
+
+.container-card{
+    width: 70%;
+    margin: 10px auto;
+    padding: 20px;
+    background: #86BBD8;
+    border-radius: 20%;
 }
 
 .clearfix {
