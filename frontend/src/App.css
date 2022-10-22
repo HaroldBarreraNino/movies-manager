@@ -53,6 +53,22 @@ label {
     background-position: center;
 }
 
+#adminbanner{
+    width: 100%;
+    background-image: url(https://cdn.shopify.com/app-store/listing_images/9dfb92890d3c6c5d9c431d8072e3c5dc/banner/CPT5gb70lu8CEAE=.png);
+    height: 800px;
+    background-color: purple;
+    background-position: center;
+}
+
+#userbanner{
+    width: 100%;
+    background-image: url(https://www.tododisca.com/otium/wp-content/uploads/2022/04/peliculas-online2.jpg);
+    height: 740px;
+    background-color: purple;
+    background-position: center;
+}
+
 .container {
     width: 70%;
     margin: 0px auto;
@@ -94,6 +110,13 @@ label {
 
 .btn-primary {
     background: #F26419;
+    border-radius: 25%;
+    width: 100px;
+    height: 50px;
+}
+
+.btn-secondary {
+    background: #F6AE2D;
     border-radius: 25%;
     width: 100px;
     height: 50px;

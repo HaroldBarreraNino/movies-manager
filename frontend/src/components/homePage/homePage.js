@@ -1,6 +1,5 @@
 import Parse from 'parse';
 import Navbar from '../navbarComponent/navbar';
-import banner from './banner.png'
 
 const HomePage = () => {
 
@@ -10,8 +9,7 @@ const HomePage = () => {
                 <h1>Movies Manager</h1>
             </header>
             <Navbar />
-            <div id='banner'>
-            </div>
+            <div id='banner'></div>
         </>
     );
 }
