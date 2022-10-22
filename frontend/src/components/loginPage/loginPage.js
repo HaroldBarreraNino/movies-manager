@@ -9,10 +9,13 @@ const LoginPage = () => {
     const [password, setPassword] = useState('');
 
     const logUser = async() => {
-        const adminkey = 'n6tnexDKys';
         const user = await Parse.User.logIn(username, password);
+        const query = new Parse.Query(Parse.User);
+        query.equalTo("username", "admin");
+        const result= await query.find();
+        const adminkey = result[0].get("username");
 
-        if(adminkey === user.id){
+        if(adminkey === user.get("username")){
             navigate('/sesionadmin', {replace: true});
         }else{
             navigate('/sesionuser', {replace: true});
