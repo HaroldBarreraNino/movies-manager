@@ -5,7 +5,7 @@ const AdminNavbar = () => {
 
     const navigate = useNavigate();
     let currentUser = Parse.User.current();
-    const nombreUser = currentUser.get("nombre");
+    const nombreUser = currentUser.get("nombre") + " " + currentUser.get("apellido");
 
     const SignOut = () => {
         Parse.User.logOut().then(() => {
@@ -22,12 +22,12 @@ const AdminNavbar = () => {
             <nav>
                 <ul>
                     <li>
-                        <Link to='/' className="btn-secondary">VER PELICULAS</Link>
+                        <Link to='/listapeliculas' className="btn-secondary">VER PELICULAS</Link>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <Link to='/' className="btn-secondary">EDITAR PERFIL</Link>
+                        <Link to='/' className="btn-secondary">BUSCAR PELICULA</Link>
                     </li>
                 </ul>
             </nav>

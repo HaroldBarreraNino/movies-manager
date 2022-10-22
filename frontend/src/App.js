@@ -8,6 +8,7 @@ import UserCrudPage from './components/crudPages/userCrudPage';
 import MovieCrudPage from './components/crudPages/movieCrudPage';
 import UserCreatePage from './components/crudPages/userCreatePage';
 import MovieCreatePage from './components/crudPages/movieCreatePage';
+import ListaPeliculasPage from './components/sesionUserPage/listaPeliculasPage';
 
 import { Routes, Route } from 'react-router-dom';
 
@@ -27,6 +28,7 @@ function App() {
         <Route path='/moviecrud' element={<MovieCrudPage />}/>
         <Route path='/createuser' element={<UserCreatePage />}/>
         <Route path='/createmovie' element={<MovieCreatePage />}/>
+        <Route path='/listapeliculas' element={<ListaPeliculasPage />}/>
         
       </Routes>
 
