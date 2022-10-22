@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #2F4858;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background: #33658A;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+    color: #F26419;
+}
+
+nav {
+    background: #86BBD8;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    margin: 10px;
+}
+
+h1 {
+    color: #F6AE2D;
+}
+
+label {
+    display: inline-block;
+    color: #F6AE2D;
+    text-align: right;
+}
+
+#banner {
+    width: 100%;
+    background-image: url(https://as2.ftcdn.net/v2/jpg/02/56/54/81/1000_F_256548179_zqcVbhsJTPoDTf1xSYKYbmedb2aAL4fB.jpg);
+    height: 800px;
+    background-color: purple;
+    background-position: center;
+}
+
+.container {
+    width: 70%;
+    margin: 0px auto;
+}
+
+.container-center {
+    text-align: center;
+    margin: 0px auto;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.titlePage {
+    background: #33658A;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+    color: #F26419;
+}
+
+.form {
+    border: 1px solid #F6AE2D;
+}
+
+.form-group {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.form-control {
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: #F26419;
+    border-radius: 25%;
+    width: 100px;
+    height: 50px;
+}
+
+.routelink {
+    background: #86BBD8;
+    border-radius: 25%;
+    border: 2px solid #33658A;
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    padding: auto;
+}
