@@ -2,12 +2,13 @@ import AdminNavbar from "../navbarComponent/adminNavbar";
 import Parse from "parse";
 import { useState, useEffect } from "react";
 import User from "./user";
+import { useNavigate } from "react-router-dom";
 
 const UserCrudPage = () => {
 
     const [datausuarios, setdatausuarios] = useState([]);
-    const usuariosarray = new Array()
-
+    const usuariosarray = new Array();
+    const navigate = useNavigate();
 
     useEffect(() => {
 
@@ -39,13 +40,15 @@ const UserCrudPage = () => {
         );
     });
 
-
+    const goCreateUser = () => {
+        navigate('/createuser', {replace: true});
+    }
 
     return (
         <>
             <AdminNavbar />
             <div className="container-center">
-                <button className="btn-primary">CREAR USUARIO</button>
+                <button className="btn-primary" onClick={() => {goCreateUser()}}>CREAR USUARIO</button>
             </div>
             <header>
                 <h1>USUARIOS</h1>

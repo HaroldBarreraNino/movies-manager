@@ -6,6 +6,7 @@ import SesionAdminPage from './components/sesionAdminPage/sesionAdminPage';
 import SesionUserPage from './components/sesionUserPage/sesionUserPage';
 import UserCrudPage from './components/crudPages/userCrudPage';
 import MovieCrudPage from './components/crudPages/movieCrudPage';
+import UserCreatePage from './components/crudPages/userCreatePage';
 
 import { Routes, Route } from 'react-router-dom';
 
@@ -23,6 +24,7 @@ function App() {
         <Route path='/sesionadmin' element={<SesionAdminPage />}/>
         <Route path='/usercrud' element={<UserCrudPage />}/>
         <Route path='/moviecrud' element={<MovieCrudPage />}/>
+        <Route path='/createuser' element={<UserCreatePage />}/>
         
       </Routes>
 
