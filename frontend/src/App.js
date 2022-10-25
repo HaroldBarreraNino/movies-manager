@@ -10,6 +10,7 @@ import UserCreatePage from './components/crudPages/userCreatePage';
 import MovieCreatePage from './components/crudPages/movieCreatePage';
 import ListaPeliculasPage from './components/sesionUserPage/listaPeliculasPage';
 import BuscarPeliculaPage from './components/sesionUserPage/buscarPeliculaPage';
+import GaleryPage from './components/galeryPage/galeryPage';
 
 import { Routes, Route } from 'react-router-dom';
 
@@ -31,6 +32,7 @@ function App() {
         <Route path='/createmovie' element={<MovieCreatePage />}/>
         <Route path='/listapeliculas' element={<ListaPeliculasPage />}/>
         <Route path='/buscarpeliculas' element={<BuscarPeliculaPage />}/>
+        <Route path='/usergaleria' element={<GaleryPage />}/>
         
       </Routes>
 

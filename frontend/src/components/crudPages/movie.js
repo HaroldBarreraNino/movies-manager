@@ -6,6 +6,7 @@ function Movie({ id }) {
     const [ide, setIde] = useState("");
     const [titulo, setTitulo] = useState("");
     const [categoria, setCategoria] = useState("");
+    const [sinopsis, setSinopsis] = useState("");
     const [imagen, setImagen] = useState("");
     const [trailer, setTrailer] = useState("");
 
@@ -20,6 +21,7 @@ function Movie({ id }) {
             setIde(id);
             setTitulo(result[0].get("titulo"));
             setCategoria(result[0].get("categoria"));
+            setSinopsis(result[0].get("sinopsis"));
             setImagen(result[0].get("imagen"));
             setTrailer(result[0].get("trailer"));
         }
@@ -33,17 +35,20 @@ function Movie({ id }) {
     return (
         <div className="container-card">
             <div className="container-center">
-            <h4>{ide}</h4>
-            <ul>
-                <li id="titleitem">{titulo}</li>
-                <li>CATEGORIA: {categoria}</li>
-                <li>
-                    <img src={imagen} />
-                </li>
-                <li>
-                    <iframe width="560" height="315" src={trailer} frameborder="0" allowfullscreen></iframe>
-                </li>
-            </ul>
+                <h4>{ide}</h4>
+                <ul>
+                    <li id="titleitem">{titulo}</li>
+                    <li>CATEGORIA: {categoria}</li>
+                    <li>Sinopsis:
+                        <p>{sinopsis}</p>
+                    </li>
+                    <li>
+                        <img src={imagen} />
+                    </li>
+                    <li>
+                        <iframe width="560" height="315" src={trailer} frameborder="0" allowfullscreen></iframe>
+                    </li>
+                </ul>
             </div>
             <div className="container-center">
                 <button className="btn-primary">ELIMINAR</button>

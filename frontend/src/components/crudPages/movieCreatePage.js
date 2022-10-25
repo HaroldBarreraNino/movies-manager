@@ -7,6 +7,7 @@ const MovieCreatePage = () => {
     const navigate = useNavigate();
     const [titulo, setTitulo] = useState('');
     const [categoria, setCategoria] = useState('');
+    const [sinopsis, setSinopsis] = useState('');
     const [imagen, setImagen] = useState('');
     const [trailer, setTrailer] = useState('');
 
@@ -17,17 +18,15 @@ const MovieCreatePage = () => {
 
         movie.set("titulo", titulo);
         movie.set("categoria", categoria);
+        movie.set("sinopsis", sinopsis);
         movie.set("imagen", imagen);
         movie.set("trailer", trailer);
 
         movie.save()
             .then((movie) => {
-                // Execute any logic that should take place after the object is saved.
-                navigate('/moviecrud', {replace: true});
+                navigate('/moviecrud', { replace: true });
                 alert('New object created with objectId: ' + movie.id);
             }, (error) => {
-                // Execute any logic that should take place if the save fails.
-                // error is a Parse.Error with an error code and message.
                 alert('Failed to create new object, with error code: ' + error.message);
             });
     }
@@ -45,6 +44,12 @@ const MovieCreatePage = () => {
                     <div class="form-group">
                         <label for="apellido">Categoria:</label>
                         <input type="text" value={categoria} onChange={(e) => (setCategoria(e.target.value))} class="form-control" placeholder="Digite la categoria de la pelicula" />
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Sinopsis:</label>
+                        <textarea value={sinopsis} onChange={(e) => (setSinopsis(e.target.value))} rows="4" cols="50">
+                            Deja tu opinion de la pelicula.
+                        </textarea>
                     </div>
                     <div class="form-group">
                         <label for="correo">Imagen:</label>
