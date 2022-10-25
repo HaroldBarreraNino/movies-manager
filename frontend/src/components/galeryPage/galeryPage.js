@@ -5,7 +5,8 @@ import Pelicula from "../sesionUserPage/pelicula";
 
 const GaleryPage = () => {
 
-    const [datagaleria, setdatagaleria] = useState([])
+    const [datagaleria, setdatagaleria] = useState([]);
+    const galeriaarray = new Array();
 
     useEffect(() => {
         const getGaleria = async () => {
@@ -15,9 +16,10 @@ const GaleryPage = () => {
             const results = await query.find();
             for (let i = 0; i < results.length; i++) {
                 const object = results[i];
-                galeriaarray.push(object.id);
+                galeriaarray.push(results[i].get("pelicula"));
             }
             setdatagaleria(galeriaarray);
+            console.log(datagaleria);
         }
 
         getGaleria();

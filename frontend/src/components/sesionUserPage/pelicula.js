@@ -68,11 +68,11 @@ function Pelicula({ id }) {
                 <ul>
                     <li id="titleitem">{titulo}</li>
                     <li>CATEGORIA: {categoria}</li>
-                    <li>Sinopsis:
-                        <p>{sinopsis}</p>
-                    </li>
                     <li>
                         <img src={imagen} />
+                    </li>
+                    <li>Sinopsis:
+                        <p>{sinopsis}</p>
                     </li>
                     <li>
                         <iframe width="560" height="315" src={trailer} frameborder="0" allowfullscreen></iframe>
@@ -92,6 +92,8 @@ function Pelicula({ id }) {
                 <textarea value={opinion} onChange={(e) => (setOpinion(e.target.value))} rows="4" cols="50">
                     Deja tu opinion de la pelicula.
                 </textarea>
+            </div>
+            <div className="container-center">
                 <button className="btn-primary" onClick={() => { rateMovie() }}>CALIFICAR</button>
                 <button className="btn-secondary" onClick={() => { addMovieToGallery() }}>AGREGAR A GALERIA</button>
             </div>
