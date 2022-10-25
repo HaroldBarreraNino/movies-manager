@@ -30,6 +30,11 @@ const AdminNavbar = () => {
                         <Link to='/buscarpeliculas' className="btn-secondary">BUSCAR PELICULA</Link>
                     </li>
                 </ul>
+                <ul>
+                    <li>
+                        <Link to='/usergaleria' className="btn-secondary">MI GALERIA</Link>
+                    </li>
+                </ul>
             </nav>
             <div className='clearfix'></div>
         </>
