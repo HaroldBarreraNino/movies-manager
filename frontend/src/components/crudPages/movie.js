@@ -39,11 +39,11 @@ function Movie({ id }) {
                 <ul>
                     <li id="titleitem">{titulo}</li>
                     <li>CATEGORIA: {categoria}</li>
-                    <li>Sinopsis:
-                        <p>{sinopsis}</p>
-                    </li>
                     <li>
                         <img src={imagen} />
+                    </li>
+                    <li>Sinopsis:
+                        <p>{sinopsis}</p>
                     </li>
                     <li>
                         <iframe width="560" height="315" src={trailer} frameborder="0" allowfullscreen></iframe>
